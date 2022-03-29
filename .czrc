@@ -1,0 +1,16 @@
+{
+  "path": "cz-emoji",
+  "config": {
+    "cz-emoji": {
+      "conventional": true,
+      "symbol": false,
+      "scopes": [
+        "deps",
+        "build",
+        "release",
+        "note",
+        "auth"
+      ]
+    }
+  }
+}
