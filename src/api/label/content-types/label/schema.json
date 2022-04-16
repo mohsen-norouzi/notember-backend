@@ -18,14 +18,16 @@
     },
     "color": {
       "type": "string",
-      "required": false,
+      "required": true,
       "unique": false,
-      "regex": "^#([A-F0-9]{6}|[A-F0-9]{3})$"
+      "regex": "^#([A-F0-9]{6}|[A-F0-9]{3})$",
+      "default": "#2E2E2E"
     },
     "icon": {
       "type": "string",
       "unique": true,
-      "required": false
+      "required": false,
+      "default": "label"
     },
     "notes": {
       "type": "relation",

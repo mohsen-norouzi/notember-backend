@@ -25,16 +25,22 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "notes"
     },
-    "checklist": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::checklist.checklist"
-    },
     "labels": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::label.label",
       "mappedBy": "notes"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "checklist": {
+      "type": "json"
     }
   }
 }
