@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "labels",
+  "info": {
+    "singularName": "label",
+    "pluralName": "labels",
+    "displayName": "Label",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "regex": "^#([A-F0-9]{6}|[A-F0-9]{3})$",
+      "default": "#2E2E2E"
+    },
+    "icon": {
+      "type": "string",
+      "unique": true,
+      "required": false,
+      "default": "label"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::note.note",
+      "inversedBy": "labels"
+    }
+  }
+}
