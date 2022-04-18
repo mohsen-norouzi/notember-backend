@@ -26,7 +26,7 @@
     "icon": {
       "type": "string",
       "unique": true,
-      "required": false,
+      "required": true,
       "default": "label"
     },
     "notes": {
