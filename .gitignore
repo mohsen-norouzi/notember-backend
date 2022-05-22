@@ -112,3 +112,9 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+
+############################
+# For Heroku
+############################
+yarn.lock
