@@ -25,7 +25,7 @@
     },
     "icon": {
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true,
       "default": "label"
     },
@@ -33,6 +33,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::note.note",
+      "inversedBy": "labels"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "labels"
     }
   }

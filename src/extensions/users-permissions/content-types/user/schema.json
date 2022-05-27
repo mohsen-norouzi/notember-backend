@@ -68,6 +68,12 @@
       "relation": "manyToMany",
       "target": "api::note.note",
       "mappedBy": "users"
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::label.label",
+      "mappedBy": "user"
     }
   }
 }
