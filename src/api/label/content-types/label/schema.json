@@ -21,7 +21,7 @@
       "required": true,
       "unique": false,
       "regex": "^#([A-F0-9]{6}|[A-F0-9]{3})$",
-      "default": "#2E2E2E"
+      "default": "#AAAAAA"
     },
     "icon": {
       "type": "string",
