@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-graphql": "4.1.6",
     "@strapi/plugin-i18n": "4.1.6",
@@ -17,7 +16,7 @@
     "@strapi/strapi": "4.1.6",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "5.0.2"
+    "sqlite3": "^5.1.4"
   },
   "author": {
     "name": "A Strapi developer"
@@ -29,5 +28,9 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "git-cz": "^4.9.0"
+  }
 }
